@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="Z3K_9pl5P5aLISqvQbXX">
-    <mxGraphModel dx="2828" dy="1578" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2175" dy="1214" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -159,6 +159,15 @@
         </mxCell>
         <mxCell id="jqF9OSU4BZyrXjbCcZS0-64" parent="1" style="whiteSpace=wrap;html=1;" value="Router" vertex="1">
           <mxGeometry height="22.5" width="60" x="390" y="642.5" as="geometry" />
+        </mxCell>
+        <mxCell id="N1WRhI_XyktnL2hC2h1a-1" parent="1" style="whiteSpace=wrap;html=1;fontSize=8;" value="&lt;div&gt;TCP&lt;/div&gt;&lt;div&gt;1514&lt;/div&gt;&lt;div&gt;1515&lt;/div&gt;&lt;div&gt;443&lt;/div&gt;&lt;div&gt;55000&lt;/div&gt;" vertex="1">
+          <mxGeometry height="55" width="33" x="97" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="N1WRhI_XyktnL2hC2h1a-2" parent="1" style="whiteSpace=wrap;html=1;fontSize=8;" value="&lt;div&gt;8080&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;6379&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3306&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="42.5" width="30" x="550" y="673.75" as="geometry" />
+        </mxCell>
+        <mxCell id="N1WRhI_XyktnL2hC2h1a-3" parent="1" style="whiteSpace=wrap;html=1;fontSize=8;" value="&lt;div&gt;22&lt;/div&gt;" vertex="1">
+          <mxGeometry height="22.5" width="20" x="700" y="447.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
