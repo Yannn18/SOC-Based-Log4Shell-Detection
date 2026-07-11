@@ -93,7 +93,7 @@
     </rule>
   </group> 
 
-  </group name="Log4Shell Remote Code Execution">
+  <group name="Log4Shell Remote Code Execution">
     <rule id="110040" level="15">
       <decoded_as>json</decoded_as>
       <field name="log">javax.el.ELProcessor</field>
@@ -339,25 +339,28 @@
   </group>
 
 
-  <group name="cowrie,honeypot,">
-    <rule id="100200" level="5">
-      <field name="eventid">cowrie.login.failed</field>
-      <description>Cowrie SSH failed login attempt</description>
+  <group name="opencanary,honeypot,">
+    <rule id="100200" level="3">
+      <decoded_as>json</decoded_as>
+      <field name="node_id">opencanary-1</field>
+      <description>OpenCanary Honeypot activity detected.</description>
     </rule>
 
-    <rule id="100201" level="10">
-      <field name="eventid">cowrie.login.success</field>
-      <description>Cowrie SSH successful login</description>
+    <rule id="100201" level="7">
+      <if_sid>100200</if_sid>
+      <field name="logtype">2001</field>
+      <description>Honeypot: Unauthorized login attempt FTP bait port.</description>
     </rule>
 
-    <rule id="100202" level="8">
-      <field name="eventid">cowrie.command.input</field>
-      <description>Cowrie command executed</description>
+    <rule id="100202" level="7">
+      <if_sid>100200</if_sid>
+      <field name="logtype">4002</field>
+      <description>Honeypot: Unauthorized login attempt on SSH bait port.</description>
     </rule>
 
-    <rule id="100203" level="12">
-      <if_sid>100202</if_sid>
-      <match>wget|curl|chmod|bash|sh</match>
-      <description>Cowrie possible malware download/execution attempt</description>
+    <rule id="100203" level="7">
+      <if_sid>100200</if_sid>
+      <field name="logtype">6001</field>
+      <description>Honeypot: Unauthorized login attempt on telnet bait port.</description>
     </rule>
   </group>
